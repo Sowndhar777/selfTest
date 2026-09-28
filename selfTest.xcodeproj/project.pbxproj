@@ -6,12 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5E72446B30692BD700054048 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 5E72446A30692BD700054048 /* SDWebImage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		5E5C3906305FC6A900285846 /* selfTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = selfTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		5E5C391B305FC6AA00285846 /* Exceptions for "selfTest" folder in "selfTest" target */ = {
+		5E5C39B2306037E500285846 /* Exceptions for "selfTest" folder in "selfTest" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -24,9 +28,14 @@
 		5E5C3908305FC6A900285846 /* selfTest */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				5E5C391B305FC6AA00285846 /* Exceptions for "selfTest" folder in "selfTest" target */,
+				5E5C39B2306037E500285846 /* Exceptions for "selfTest" folder in "selfTest" target */,
 			);
 			path = selfTest;
+			sourceTree = "<group>";
+		};
+		5E5C3933305FEB5300285846 /* ReusableUI */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ReusableUI;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -36,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E72446B30692BD700054048 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +57,7 @@
 			children = (
 				5E5C3908305FC6A900285846 /* selfTest */,
 				5E5C3907305FC6A900285846 /* Products */,
+				5E5C3933305FEB5300285846 /* ReusableUI */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,9 +86,11 @@
 			);
 			fileSystemSynchronizedGroups = (
 				5E5C3908305FC6A900285846 /* selfTest */,
+				5E5C3933305FEB5300285846 /* ReusableUI */,
 			);
 			name = selfTest;
 			packageProductDependencies = (
+				5E72446A30692BD700054048 /* SDWebImage */,
 			);
 			productName = selfTest;
 			productReference = 5E5C3906305FC6A900285846 /* selfTest.app */;
@@ -107,6 +120,9 @@
 			);
 			mainGroup = 5E5C38FD305FC6A900285846;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5E72446930692BD700054048 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5E5C3907305FC6A900285846 /* Products */;
 			projectDirPath = "";
@@ -150,9 +166,9 @@
 				INFOPLIST_FILE = selfTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -182,9 +198,9 @@
 				INFOPLIST_FILE = selfTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -345,6 +361,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5E72446930692BD700054048 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5E72446A30692BD700054048 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5E72446930692BD700054048 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E5C38FE305FC6A900285846 /* Project object */;
 }
