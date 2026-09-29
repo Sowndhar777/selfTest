@@ -10,7 +10,6 @@ import Foundation
 import Security
 
 enum KeychainHelper {
-
     private static let service = Bundle.main.bundleIdentifier ?? "selfTest"
 
     @discardableResult
